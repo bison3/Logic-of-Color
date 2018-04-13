@@ -2,13 +2,6 @@ Ring[] rings; //declares array
 int numRings = 75;
 int currentRing = 0;
 
-/*void mouseMoved() {
-  rings[currentRing].start(mouseX, mouseY);
-  currentRing++;
-  if (currentRing >= numRings) {
-    currentRing = 0;
-  }
-}*/
 ///////////////////////////////
 float xRing;
 float yRing;
@@ -59,14 +52,6 @@ class Ring {
       } else {
         rect(x,y, diameter, diameter);
       }
-      //text("♥",x,y);
-      /*translate(mouseX, mouseY);
-      for (int i=0; i<61; i++) {
-        float x = 0.25 * (-pow(i,2) + 40*i + 1200)*sin((PI*i)/180);
-        float y = -0.25 * (-pow(i,2) + 40*i + 1200)*cos((PI*i)/180);
-        point(x,y); // use these to place your little hearts
-        point(-x,y); // use these to place your little hearts
-      }*/
     }
   }
 }
